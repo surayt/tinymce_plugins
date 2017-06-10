@@ -1,3 +1,6 @@
+// https://codepen.io/Misiu/pen/EWEVPo
+// also see https://github.com/tinymce/tinymce/issues/3546
+
 tinymce.PluginManager.add('autoheight', function(editor) {
 
   var editor_container;
