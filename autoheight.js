@@ -26,8 +26,8 @@ tinymce.PluginManager.add('autoheight', function(editor) {
         }
       }
       /*the extra 8 is for margin added between the toolbars*/
-      /*the extra 95 are to allow for a custom non-tinymce toolbar at the bottom */
-      new_height = element_height - bars_height - 8 - 95;
+      /*the extra 100 are to allow for a custom non-tinymce toolbar at the bottom */
+      new_height = element_height - bars_height - 8 - 100;
       editor.theme.resizeTo('100%', new_height);
     } catch (err) {
       console.log(err);
