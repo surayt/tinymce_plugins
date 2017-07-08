@@ -1,7 +1,6 @@
 // Taken from
 // https://github.com/dreyercalitz/tinymce-rails-fileupload/blob/master/app/assets/javascripts/tinymce/plugins/uploadfile/plugin.js,
-// added this comment and modified line 48 for uploads to go to /:locale/upload.
-// Changed line 180 to produce a link having a CSS class for easier identification of file links.
+// Changed line 179 to produce a link having a CSS class for easier identification of file links.
 // Pasted English translations at the bottom instead of keeping them in a separate file.
 
 (function() {
@@ -46,7 +45,7 @@
 
         iframe = win.find("iframe")[0];
         form = createElement('form', {
-          action: ed.getParam("uploadfile_form_url", '/'+$(location).prop('pathname').split('/')[1]+'/'+'upload'),
+          action: ed.getParam("uploadfile_form_url", '/files/upload'),
           target: iframe._id,
           method: "POST",
           enctype: 'multipart/form-data',
